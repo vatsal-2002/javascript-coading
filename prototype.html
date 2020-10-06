@@ -1,0 +1,32 @@
+<!Doctype.html>
+<html>
+<head>
+</head>
+<body>
+
+<script type = "text/javascript">
+
+    var person = function(name,age,city){
+    	this.name = name;
+    	this.age = age;
+    	this.city = city;
+     };
+
+     var kashyap = new person('kashyap',22,'ahmedabad');
+     var het = new person('het',14,'palanpur');
+     var sanket = new person('sanket',17,'rajkot');
+     var vatsal = new person('vatsal',19,'gandhinagar');
+
+     person.prototype.birthyear = function(){
+     	var currentyear = new 	Date().getFullYear();
+     	return currentyear - this.age;
+
+     }
+
+     document.write(vatsal.birthyear());
+    
+</script>
+</body> 
+</html>
+
+    
